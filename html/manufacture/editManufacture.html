@@ -1,0 +1,48 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/form.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <title>Gyártó</title>
+</head>
+
+<body>
+
+    <div class="navbar" id="myNavbar">
+        <a href="../manufacture/manufacture.html" class="active">Gyártó</a>
+        <a href="../../index.html">Autó</a>
+    </div>
+
+    <div class="content">
+
+        <div class="title">
+            <h1>Gyártó Módosítása</h1>
+        </div>
+
+        <form>
+            <div>
+                <label for="name"><b>Név</b></label><br>
+                <input type="text" id="name" name="name" placeholder="Név">
+            </div>
+            <div>
+                <label for="country"><b>Ország</b></label><br>
+                <input type="text" id="country" name="country" placeholder="Ország">
+            </div>
+            <div>
+                <label for="founded"><b>Alapítási idő</b></label><br>
+                <input type="text" id="founded" name="founded" placeholder="Alapítási idő">
+            </div>
+            <a class="button" href="manufacture.html">Vissza</a>
+            <input class="button_submit" type="submit" value="Módosítás" id="btnEdit" />
+
+        </form>
+    </div>
+
+    <script src="../../js/manufacture/editManufacture.js"></script>
+
+</body>
+
+</html>

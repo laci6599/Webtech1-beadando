@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/base.css">
+    <link rel="stylesheet" href="../../css/form.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js">
+    </script>
+    <title>Gyártó</title>
+</head>
+
+<body>
+
+    <div class="navbar" id="myNavbar">
+        <a href="../manufacture/manufacture.html">Gyártó</a>
+        <a href="../../index.html" class="active">Autó</a>
+    </div>
+
+    <div class="content">
+
+        <div class="title">
+            <h1>Autó módosítása</h1>
+        </div>
+        <form>
+            <div>
+                <label for="name"><b>Név</b></label>
+                <input type="text" id="name" name="name" placeholder="Név">
+            </div>
+            <div>
+                <label for="manufacturer"><b>Gyártó</b></label>
+                <select id="manufacturer">
+                </select>
+            </div>
+            <div>
+                <label for="consumption"><b>Fogyasztás</b></label>
+                <input type="text" id="consumption" name="consumption" placeholder="Fogyasztás">
+            </div>
+            <div>
+                <label for="color"><b>Szín</b></label>
+                <input type="text" id="color" name="color" placeholder="Szín">
+            </div>
+            <div>
+                <label for="available"><b>Elérhető (db)</b></label>
+                <input type="number" id="available" name="available" placeholder="Elérhető (db)">
+            </div>
+            <div>
+                <label for="year"><b>Évjárat</b></label>
+                <input type="number" id="year" name="year" placeholder="Évjárat">
+            </div>
+            <div>
+                <label for="horsepower"><b>Lóerő</b></label>
+                <input type="number" id="horsepower" name="horsepower" placeholder="horsepower">
+            </div>
+            <a class="button" href="../../index.html">Vissza</a>
+            <input class="button_submit" type="submit" value="Módosítás" id="btnEdit" />
+
+        </form>
+    </div>
+    <div class="footer">
+    </div>
+    <script src="../../js/car/editCar.js"></script>
+
+</body>
+
+</html>
