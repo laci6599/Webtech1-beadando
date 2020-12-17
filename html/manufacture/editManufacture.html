@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">    
     <link rel="stylesheet" href="../../css/style.css">
     <link rel="stylesheet" href="../../css/form.css">
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
@@ -11,33 +12,43 @@
 
 <body>
 
-    <div class="navbar" id="myNavbar">
-        <a href="../manufacture/manufacture.html" class="active">Gyártó</a>
-        <a href="../../index.html">Autó</a>
-    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="../manufacture/manufacture.html"><span class="sr-only">Gyártó</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="../../index.html">Autó</a>
+    </ul>
+  </div>
+</nav>
 
     <div class="content">
 
         <div class="title">
-            <h1>Gyártó Módosítása</h1>
+            <h1>Gyártó módosítása</h1>
         </div>
-
         <form>
-            <div>
-                <label for="name"><b>Név</b></label><br>
-                <input type="text" id="name" name="name" placeholder="Név">
-            </div>
-            <div>
-                <label for="country"><b>Ország</b></label><br>
-                <input type="text" id="country" name="country" placeholder="Ország">
-            </div>
-            <div>
-                <label for="founded"><b>Alapítási idő</b></label><br>
-                <input type="text" id="founded" name="founded" placeholder="Alapítási idő">
-            </div>
-            <a class="button" href="manufacture.html">Vissza</a>
-            <input class="button_submit" type="submit" value="Módosítás" id="btnEdit" />
-
+	    <div class="form-group">
+    		<label for="name">Név</label>
+    		<input class="form-control" type="text" name="name" id="name" placeholder="Név">
+  	    </div>
+	    <div class="form-group">
+    		<label for="country">Ország</label>
+    		<input class="form-control" type="text" name="country" id="country" placeholder="Ország">
+  	    </div>
+	    <div class="form-group">
+    		<label for="founded">Alapítva</label>
+    		<input class="form-control" type="text" name="founded" id="founded" placeholder="Alapítási idő">
+  	    </div>
+	    <input class="btn btn-outline-success" type="submit" value="Módosítás" id="btnEdit">
+            <button type="button" class="btn btn-outline-dark"><a href="manufacture.html">Vissza</a></button>
         </form>
     </div>
 

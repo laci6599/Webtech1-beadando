@@ -1,22 +1,33 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../css/base.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">    
+    <link rel="stylesheet" href="../../css/style.css">
     <link rel="stylesheet" href="../../css/form.css">
-    <script src="https://code.jquery.com/jquery-3.5.1.js">
-    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <title>Gyártó</title>
 </head>
 
 <body>
 
-    <div class="navbar" id="myNavbar">
-        <a href="../manufacture/manufacture.html">Gyártó</a>
-        <a href="../../index.html" class="active">Autó</a>
-    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="../manufacture/manufacture.html"><span class="sr-only">Gyártó</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="../../index.html">Autó</a>
+    </ul>
+  </div>
+</nav>
 
     <div class="content">
 
@@ -24,43 +35,41 @@
             <h1>Autó módosítása</h1>
         </div>
         <form>
-            <div>
-                <label for="name"><b>Név</b></label>
-                <input type="text" id="name" name="name" placeholder="Név">
-            </div>
-            <div>
-                <label for="manufacturer"><b>Gyártó</b></label>
-                <select id="manufacturer">
-                </select>
-            </div>
-            <div>
-                <label for="consumption"><b>Fogyasztás</b></label>
-                <input type="text" id="consumption" name="consumption" placeholder="Fogyasztás">
-            </div>
-            <div>
-                <label for="color"><b>Szín</b></label>
-                <input type="text" id="color" name="color" placeholder="Szín">
-            </div>
-            <div>
-                <label for="available"><b>Elérhető (db)</b></label>
-                <input type="number" id="available" name="available" placeholder="Elérhető (db)">
-            </div>
-            <div>
-                <label for="year"><b>Évjárat</b></label>
-                <input type="number" id="year" name="year" placeholder="Évjárat">
-            </div>
-            <div>
-                <label for="horsepower"><b>Lóerő</b></label>
-                <input type="number" id="horsepower" name="horsepower" placeholder="horsepower">
-            </div>
-            <a class="button" href="../../index.html">Vissza</a>
-            <input class="button_submit" type="submit" value="Módosítás" id="btnEdit" />
+	    <div class="form-group">
+    		<label for="name">Név</label>
+    		<input class="form-control" type="text" name="name" id="name" placeholder="Név">
+  	    </div>
+	    <div class="form-group">
+    <label for="manufacturer">Gyártó</label>
+    <select class="form-control" id="manufacturer">
+      <option value="Gyarto">Kérem válasszon</option>
+    </select>
+  </div>
+	    <div class="form-group">
+    		<label for="consumption">Fogyasztás</label>
+    		<input class="form-control" type="text" name="consumption" id="comsumption" placeholder="Fogyasztás">
+  	    </div>
+	    <div class="form-group">
+    		<label for="color">Szín</label>
+    		<input class="form-control" type="text" name="color" id="color" placeholder="Szín">
+  	    </div>
+	    <div class="form-group">
+    		<label for="available">Elérhető</label>
+    		<input class="form-control" type="number" name="available" id="available" placeholder="Elérhető (db)">
+  	    </div>
+	    <div class="form-group">
+    		<label for="year">Évjárat</label>
+    		<input class="form-control" type="number" name="year" id="year" placeholder="Évjárat">
+  	    </div>
+	    <div class="form-group">
+    		<label for="horsepower">Lóerő</label>
+    		<input class="form-control" type="number" name="horsepower" id="horsepower" placeholder="Lóerő">
+  	    </div>
+            <input class="btn btn-outline-success" type="submit" value="Módosítás" id="btnEdit">
+            <button type="button" class="btn btn-outline-dark"><a href="../../index.html">Vissza</a></button></form>
+    </div>
 
-        </form>
-    </div>
-    <div class="footer">
-    </div>
-    <script src="../../js/car/editCar.js"></script>
+    <script src="../../js/manufacture/createManufacture.js"></script>
 
 </body>
 
