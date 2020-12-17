@@ -1,39 +1,65 @@
 body {
     background-color: whitesmoke;
   }
-   
-    #table {
-    margin-top: 25px;
-    font-family: Arial, Helvetica, sans-serif;
-    border-collapse: collapse;
-    width: 75%;
-    text-align: center;
-  }
-  
-  #table td,
-  #table th {
-    border: 1px solid #ddd;
-    padding: 8px;
-  }
-  
-  #table tr:nth-child(even) {
-    background-color: #f2f2f2;
-  }
-  
-  #table tr:hover {
-    background-color: #ddd;
-  }
-  
-  #table th {
-    background-color: #32979e;
-    font-size: 12px;
-    text-transform: uppercase;
-    letter-spacing: 0.02em;
-  }
-  #table tr {
-    background-color: #ffffff;
-    box-shadow: 0px 0px 9px 0px;
-  }
+
+   @media
+    only screen and (max-width: 760px),
+    (min-device-width: 768px) and (max-device-width: 1024px)  {
+
+        table, thead, tbody, th, td, tr {
+            display: block;
+        }
+
+        thead tr {
+            position: absolute;
+            top: -9999px;
+            left: -9999px;
+        }
+
+        tr { border: 1px solid #ccc; }
+
+        td {
+            border: none;
+            border-bottom: 1px solid #eee;
+            position: relative;
+            padding-left: 50%;
+        }
+
+        td:before {
+            position: absolute;
+            top: 6px;
+            left: 6px;
+            width: 45%;
+            padding-right: 10px;
+            white-space: nowrap;
+        }
+
+        td:nth-of-type(1):before { content: "Név"; }
+        td:nth-of-type(2):before { content: "Fogyasztás"; }
+        td:nth-of-type(3):before { content: "Szín"; }
+	td:nth-of-type(4):before { content: "Gyártó"; }
+	td:nth-of-type(5):before { content: "Elérhető (db)"; }
+	td:nth-of-type(6):before { content: "Évjárat"; }
+	td:nth-of-type(7):before { content: "Lóerő"; }
+	td:nth-of-type(8):before { content: "Módosítás"; }
+	td:nth-of-type(9):before { content: "Törlés"; }
+
+    }
+
+    @media only screen
+    and (min-device-width : 320px)
+    and (max-device-width : 480px) {
+        body {
+            padding: 0;
+            margin: 0;
+            width: 320px; }
+        }
+
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+        body {
+            width: 495px;
+        }
+    }
 
   .title {
     margin-left: 10px;
